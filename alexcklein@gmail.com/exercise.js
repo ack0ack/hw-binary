@@ -175,9 +175,10 @@ exercise.binary = function(time){
                 col1.position4= 'off';
                 col1.position2= 'off';
                 col1.position1= 'on';
-//     //     }
-//     };
-//     return binary;
+    }
+
+    return binary;
+    }
     
 
     //----------------------------------------------------------
