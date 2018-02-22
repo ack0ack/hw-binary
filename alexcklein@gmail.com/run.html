@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <script src="exercise.js"></script>
+
 <script>
 
 // start timer when page is loaded
@@ -10,7 +11,7 @@ var timer = function() {
 	// get the current dat & time
 	var time = new Date();
 
-	// show roman time, using 6 columns
+	//show roman time, using 6 columns
 	setRoman(time);
 
 	// show binary time
@@ -24,71 +25,37 @@ window.onload = timer;
 
 
 var setRoman = function(time){
-	exercise.roman(time);
 	// set roman time
 	// you must implement exercise.roman() 
+
+	var romanreturn = exercise.roman(time);
+
+	document.getElementById("hour_col1_pos0").innerHTML = romanreturn.hour_co11;
+	document.getElementById("hour_col2_pos0").innerHTML = romanreturn.hour_co12;
+	document.getElementById("hour_col3_pos0").innerHTML = 'roman.min_co11';
+	document.getElementById("hour_col4_pos0").innerHTML = 'roman.min_co12';
+	document.getElementById("hour_col5_pos0").innerHTML = 'roman.sec_co11';
+	document.getElementById("hour_col6_pos0").innerHTML = 'roman.sec_co12';
 };
+
 
 var setBinary = function(time){
-	exercise.binary(time);
-};
-	// if (binary.col1.position1==='on'){
-	// document.getElementById('hour_col1_pos1').style.backgroundColor = "red";
-	// if (binary.col.position2==='on'){
-	// document.getElementById('hour_col1_pos2').style.backgroundColor = "red";
-	// if (binary.col1.position4==='on'){
-	// document.getElementById('hour_col1_pos4').style.backgroundColor = "red";
-	// if (binary.col1.position8==='on'){
-	// document.getElementById('hour_col1_pos8').style.backgroundColor = "red";
+	var returnBinary = exercise.binary(time); //returns and stores in new var name 
 
-	// if (binary.col2.position1==='on'){
-	// document.getElementById('hour_col2_pos1').style.backgroundColor = "red";
-	// if (binary.col2.position2==='on'){
-	// document.getElementById('hour_col2_pos2').style.backgroundColor = "red";
-	// if (binary.col2.position4==='on'){
-	// document.getElementById('hour_col2_pos4').style.backgroundColor = "red";
-	// if (binary.col2.position8==='on'){
-	// document.getElementById('hour_col2_pos8').style.backgroundColor = "red";
+	if (returnBinary.column1.position1==='on'){
+	document.getElementById('hour_col1_pos1').style.backgroundColor = "red"
+	};
+	if (returnBinary.column1.position2==='on'){
+	document.getElementById('hour_col1_pos2').style.backgroundColor = "red";
+	};
+	if (returnBinary.column1.position4==='on'){
+	document.getElementById('hour_col1_pos4').style.backgroundColor = "red";
+	};
+	if (returnBinary.column1.position8==='on'){
+	document.getElementById('hour_col1_pos8').style.backgroundColor = "red";
+	};
 
-	// if (binary.col3.position1==='on'){
-	// document.getElementById('hour_col3_pos1').style.backgroundColor = "red";
-	// if (binary.col3.position3==='on'){
-	// document.getElementById('hour_col3_pos2').style.backgroundColor = "red";
-	// if (binary.col3.position4==='on'){
-	// document.getElementById('hour_col3_pos4').style.backgroundColor = "red";
-	// if (binary.col3.position8==='on'){
-	// document.getElementById('hour_col3_pos8').style.backgroundColor = "red";
-
-	// if (binary.col4.position1==='on'){
-	// document.getElementById('hour_col4_pos1').style.backgroundColor = "red";
-	// if (binary.col4.position4==='on'){
-	// document.getElementById('hour_col4_pos2').style.backgroundColor = "red";
-	// if (binary.col4.position4==='on'){
-	// document.getElementById('hour_col4_pos4').style.backgroundColor = "red";
-	// if (binary.col4.position8==='on'){
-	// document.getElementById('hour_col4_pos8').style.backgroundColor = "red";
-
-	// if (binary.col5.position1==='on'){
-	// document.getElementById('hour_col5_pos1').style.backgroundColor = "red";
-	// if (binary.col5.position4==='on'){
-	// document.getElementById('hour_col5_pos2').style.backgroundColor = "red";
-	// if (binary.col5.position4==='on'){
-	// document.getElementById('hour_col5_pos4').style.backgroundColor = "red";
-	// if (binary.col5.position8==='on'){
-	// document.getElementById('hour_col5_pos8').style.backgroundColor = "red";
-
-	// if (binary.col6.position1==='on'){
-	// document.getElementById('hour_col6_pos1').style.backgroundColor = "red";
-	// if (binary.col6.position4==='on'){
-	// document.getElementById('hour_col6_pos2').style.backgroundColor = "red";
-	// if (binary.col6.position4==='on'){
-	// document.getElementById('hour_col6_pos4').style.backgroundColor = "red";
-	// if (binary.col6.position8==='on'){
-	// document.getElementById('hour_col6_pos8').style.backgroundColor = "red";
-	
-	// set roman time
-	// you must implement exercise.binary()
-
+	}
 </script>
 
 <style> div {position:absolute; width: 100px; height: 100px; background: silver; text-align: center;vertical-align: middle; line-height: 100px;font-size: 5em;} </style>
@@ -98,7 +65,7 @@ var setBinary = function(time){
 <divdash id ="hour_col1_pos0" style="left: 6px; top: 450px;"></divdash>
 <div id ="hour_col1_pos1" style="left: 10px; top: 340px;"></div>
 <div id ="hour_col1_pos2" style="left: 10px; top: 230px;"></div>
-<div id ="hour_col1_pos4" style="left: 10px; top: 120px; visibility:hidden";></div>
+<div id ="hour_col1_pos4" style="left: 10px; top: 120px; visibility:hidden"></div>
 <div id ="hour_col1_pos8" style="left: 10px; top: 10px; visibility:hidden"></div>
 
 <divdash id ="hour_col2_pos0" style="left: 116px; top: 450px;"></divdash>
