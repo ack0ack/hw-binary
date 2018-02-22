@@ -3,10 +3,12 @@
 <script src="exercise.js"></script>
 <script>
 
+// start timer when page is loaded
+// your code here
+
 var timer = function() {
-	// get the current date & time
+	// get the current dat & time
 	var time = new Date();
-	console.log(time);
 
 	// show roman time, using 6 columns
 	setRoman(time);
@@ -18,19 +20,74 @@ var timer = function() {
 	setTimeout(timer, 1000);
 };
 
+window.onload = timer;
+
+
 var setRoman = function(time){
+	exercise.roman(time);
 	// set roman time
 	// you must implement exercise.roman() 
 };
 
 var setBinary = function(time){
+	exercise.binary(time);
+};
+	// if (binary.col1.position1==='on'){
+	// document.getElementById('hour_col1_pos1').style.backgroundColor = "red";
+	// if (binary.col.position2==='on'){
+	// document.getElementById('hour_col1_pos2').style.backgroundColor = "red";
+	// if (binary.col1.position4==='on'){
+	// document.getElementById('hour_col1_pos4').style.backgroundColor = "red";
+	// if (binary.col1.position8==='on'){
+	// document.getElementById('hour_col1_pos8').style.backgroundColor = "red";
+
+	// if (binary.col2.position1==='on'){
+	// document.getElementById('hour_col2_pos1').style.backgroundColor = "red";
+	// if (binary.col2.position2==='on'){
+	// document.getElementById('hour_col2_pos2').style.backgroundColor = "red";
+	// if (binary.col2.position4==='on'){
+	// document.getElementById('hour_col2_pos4').style.backgroundColor = "red";
+	// if (binary.col2.position8==='on'){
+	// document.getElementById('hour_col2_pos8').style.backgroundColor = "red";
+
+	// if (binary.col3.position1==='on'){
+	// document.getElementById('hour_col3_pos1').style.backgroundColor = "red";
+	// if (binary.col3.position3==='on'){
+	// document.getElementById('hour_col3_pos2').style.backgroundColor = "red";
+	// if (binary.col3.position4==='on'){
+	// document.getElementById('hour_col3_pos4').style.backgroundColor = "red";
+	// if (binary.col3.position8==='on'){
+	// document.getElementById('hour_col3_pos8').style.backgroundColor = "red";
+
+	// if (binary.col4.position1==='on'){
+	// document.getElementById('hour_col4_pos1').style.backgroundColor = "red";
+	// if (binary.col4.position4==='on'){
+	// document.getElementById('hour_col4_pos2').style.backgroundColor = "red";
+	// if (binary.col4.position4==='on'){
+	// document.getElementById('hour_col4_pos4').style.backgroundColor = "red";
+	// if (binary.col4.position8==='on'){
+	// document.getElementById('hour_col4_pos8').style.backgroundColor = "red";
+
+	// if (binary.col5.position1==='on'){
+	// document.getElementById('hour_col5_pos1').style.backgroundColor = "red";
+	// if (binary.col5.position4==='on'){
+	// document.getElementById('hour_col5_pos2').style.backgroundColor = "red";
+	// if (binary.col5.position4==='on'){
+	// document.getElementById('hour_col5_pos4').style.backgroundColor = "red";
+	// if (binary.col5.position8==='on'){
+	// document.getElementById('hour_col5_pos8').style.backgroundColor = "red";
+
+	// if (binary.col6.position1==='on'){
+	// document.getElementById('hour_col6_pos1').style.backgroundColor = "red";
+	// if (binary.col6.position4==='on'){
+	// document.getElementById('hour_col6_pos2').style.backgroundColor = "red";
+	// if (binary.col6.position4==='on'){
+	// document.getElementById('hour_col6_pos4').style.backgroundColor = "red";
+	// if (binary.col6.position8==='on'){
+	// document.getElementById('hour_col6_pos8').style.backgroundColor = "red";
+	
 	// set roman time
 	// you must implement exercise.binary()
-};
-
-// start timer when page is loaded
-// your code here
-window.onload = timer; 
 
 </script>
 
@@ -74,19 +131,4 @@ window.onload = timer;
 <div id ="hour_col6_pos4" style="left: 560px; top: 120px;"></div>
 <div id ="hour_col6_pos8" style="left: 560px; top: 10px;"></div>
 
-
-
-
-<script> 
-var response = exercise.binary(time, 'hour_col1');
-var response = {
-	position8 : 'off',
-	position4 : 'off',
-	position2: 'off',
-	position1: 'on',
-}
-document.getElementById('hour_col6_pos8').style.backgroundColor = "red";
-</script>
-
 </html>
-     
