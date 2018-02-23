@@ -31,7 +31,7 @@ exercise.roman = function(time){
     var column5 = secondsArray[0];
     var column6 = secondsArray[1];
 
-    console.log(column6);
+    console.log(secondsArray);
 
     var roman={
         hour_co11 : column1,
@@ -42,7 +42,6 @@ exercise.roman = function(time){
         sec_col2 : column6,
     }
 
-    console.log(roman);
     return roman;
 
 } 
@@ -353,128 +352,128 @@ exercise.binary = function(time){
     } 
 
 //column 5
-if(column5 == '0'){
-    binary.column5.position8= 'on';
-    binary.column5.position4= 'on';
-    binary.column5.position2= 'on';
-    binary.column5.position1= 'on';
-} 
-if(column5 == '1'){
-    binary.column5.position8= 'off';
-    binary.column5.position4= 'off';
-    binary.column5.position2= 'off';
-    binary.column5.position1= 'on';
-} 
-if(column5 == '2'){
-    binary.column5.position8= 'off';
-    binary.column5.position4= 'off';
-    binary.column5.position2= 'on';
-    binary.column5.position1= 'off';
-} 
-if(column5 == '3'){
-    binary.column5.position8= 'off';
-    binary.column5.position4= 'off';
-    binary.column5.position2= 'on';
-    binary.column5.position1= 'on';
-} 
-if(column5 == '4'){
-    binary.column5.position8= 'off';
-    binary.column5.position4= 'on';
-    binary.column5.position2= 'off';
-    binary.column5.position1= 'off';
-} 
-if(column5 == '5'){
-    binary.column5.position8= 'off';
-    binary.column5.position4= 'on';
-    binary.column5.position2= 'off';
-    binary.column5.position1= 'on';
-} 
-if(column5 == '6'){
-    binary.column5.position8= 'off';
-    binary.column5.position4= 'on';
-    binary.column5.position2= 'on';
-    binary.column5.position1= 'off';
-} 
-if(column5 == '7'){
-    binary.column5.position8= 'off';
-    binary.column5.position4= 'on';
-    binary.column5.position2= 'on';
-    binary.column5.position1= 'on';
-} 
-if(column5 == '8'){
-    binary.column5.position8= 'on';
-    binary.column5.position4= 'off';
-    binary.column5.position2= 'off';
-    binary.column5.position1= 'off';
-} 
-if(column5 == '9'){
-    binary.column5.position8= 'on';
-    binary.column5.position4= 'off';
-    binary.column5.position2= 'off';
-    binary.column5.position1= 'on';
-} 
+    if(column5 == '0'){
+        binary.column5.position8= 'off';
+        binary.column5.position4= 'off';
+        binary.column5.position2= 'off';
+        binary.column5.position1= 'off';
+    } 
+    if(column5 == '1'){
+        binary.column5.position8= 'off';
+        binary.column5.position4= 'off';
+        binary.column5.position2= 'off';
+        binary.column5.position1= 'on';
+    } 
+    if(column5 == '2'){
+        binary.column5.position8= 'off';
+        binary.column5.position4= 'off';
+        binary.column5.position2= 'on';
+        binary.column5.position1= 'off';
+    } 
+    if(column5 == '3'){
+        binary.column5.position8= 'off';
+        binary.column5.position4= 'off';
+        binary.column5.position2= 'on';
+        binary.column5.position1= 'on';
+    } 
+    if(column5 == '4'){
+        binary.column5.position8= 'off';
+        binary.column5.position4= 'on';
+        binary.column5.position2= 'off';
+        binary.column5.position1= 'off';
+    } 
+    if(column5 == '5'){
+        binary.column5.position8= 'off';
+        binary.column5.position4= 'on';
+        binary.column5.position2= 'off';
+        binary.column5.position1= 'on';
+    } 
+    if(column5 == '6'){
+        binary.column5.position8= 'off';
+        binary.column5.position4= 'on';
+        binary.column5.position2= 'on';
+        binary.column5.position1= 'off';
+    } 
+    if(column5 == '7'){
+        binary.column5.position8= 'off';
+        binary.column5.position4= 'on';
+        binary.column5.position2= 'on';
+        binary.column5.position1= 'on';
+    } 
+    if(column5 == '8'){
+        binary.column5.position8= 'on';
+        binary.column5.position4= 'off';
+        binary.column5.position2= 'off';
+        binary.column5.position1= 'off';
+    } 
+    if(column5 == '9'){
+        binary.column5.position8= 'on';
+        binary.column5.position4= 'off';
+        binary.column5.position2= 'off';
+        binary.column5.position1= 'on';
+    } 
 
-//column 6
-if(column6 == '0'){
-    binary.column6.position8= 'on';
-    binary.column6.position4= 'on';
-    binary.column6.position2= 'on';
-    binary.column6.position1= 'on';
-} 
-if(column6 == '1'){
-    binary.column6.position8= 'off';
-    binary.column6.position4= 'off';
-    binary.column6.position2= 'off';
-    binary.column6.position1= 'on';
-} 
-if(column6 == '2'){
-    binary.column6.position8= 'off';
-    binary.column6.position4= 'off';
-    binary.column6.position2= 'on';
-    binary.column6.position1= 'off';
-} 
-if(column6 == '3'){
-    binary.column6.position8= 'off';
-    binary.column6.position4= 'off';
-    binary.column6.position2= 'on';
-    binary.column6.position1= 'on';
-} 
-if(column6 == '4'){
-    binary.column6.position8= 'off';
-    binary.column6.position4= 'on';
-    binary.column6.position2= 'off';
-    binary.column6.position1= 'off';
-} 
-if(column6 == '5'){
-    binary.column6.position8= 'off';
-    binary.column6.position4= 'on';
-    binary.column6.position2= 'off';
-    binary.column6.position1= 'on';
-} 
-if(column6 == '6'){
-    binary.column6.position8= 'off';
-    binary.column6.position4= 'on';
-    binary.column6.position2= 'on';
-    binary.column6.position1= 'off';
-} 
-if(column6 == '7'){
-    binary.column6.position8= 'off';
-    binary.column6.position4= 'on';
-    binary.column6.position2= 'on';
-    binary.column6.position1= 'on';
-} 
-if(column6 == '8'){
-    binary.column6.position8= 'on';
-    binary.column6.position4= 'off';
-    binary.column6.position2= 'off';
-    binary.column6.position1= 'off';
-} 
-if(column6 == '9'){
-    binary.column6.position8= 'on';
-    binary.column6.position4= 'off';
-    binary.column6.position2= 'off';
-    binary.column6.position1= 'on';
-} 
+    //column 6
+    if(column6 == '0'){
+        binary.column6.position8= 'off';
+        binary.column6.position4= 'off';
+        binary.column6.position2= 'off';
+        binary.column6.position1= 'off';
+    } 
+    if(column6 == '1'){
+        binary.column6.position8= 'off';
+        binary.column6.position4= 'off';
+        binary.column6.position2= 'off';
+        binary.column6.position1= 'on';
+    } 
+    if(column6 == '2'){
+        binary.column6.position8= 'off';
+        binary.column6.position4= 'off';
+        binary.column6.position2= 'on';
+        binary.column6.position1= 'off';
+    } 
+    if(column6 == '3'){
+        binary.column6.position8= 'off';
+        binary.column6.position4= 'off';
+        binary.column6.position2= 'on';
+        binary.column6.position1= 'on';
+    } 
+    if(column6 == '4'){
+        binary.column6.position8= 'off';
+        binary.column6.position4= 'on';
+        binary.column6.position2= 'off';
+        binary.column6.position1= 'off';
+    } 
+    if(column6 == '5'){
+        binary.column6.position8= 'off';
+        binary.column6.position4= 'on';
+        binary.column6.position2= 'off';
+        binary.column6.position1= 'on';
+    } 
+    if(column6 == '6'){
+        binary.column6.position8= 'off';
+        binary.column6.position4= 'on';
+        binary.column6.position2= 'on';
+        binary.column6.position1= 'off';
+    } 
+    if(column6 == '7'){
+        binary.column6.position8= 'off';
+        binary.column6.position4= 'on';
+        binary.column6.position2= 'on';
+        binary.column6.position1= 'on';
+    } 
+    if(column6 == '8'){
+        binary.column6.position8= 'on';
+        binary.column6.position4= 'off';
+        binary.column6.position2= 'off';
+        binary.column6.position1= 'off';
+    } 
+    if(column6 == '9'){
+        binary.column6.position8= 'on';
+        binary.column6.position4= 'off';
+        binary.column6.position2= 'off';
+        binary.column6.position1= 'on';
+    } 
 
     return binary;
     };
